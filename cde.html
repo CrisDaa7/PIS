@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Disertaciones Estudiantiles (CDE)</title>
+    <link rel="stylesheet" href="estiloC.css"> <!-- Archivo CSS para estilos -->
+</head>
+<body>
+    <div class="logo-container">
+        <img class="unl-logo" src="unl.png" alt="Logo de UNL">
+    </div>
+    <div class="container">
+
+        <h1>Centro de Disertaciones Estudiantiles (CDE)</h1>
+        <div class="options">
+            <h2>Diserción por Carrera, Ciclo y Año:</h2>
+            <div class="form-group">
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera" required>
+                    <option value="">Seleccione una carrera</option>
+                    <!-- Opciones de carreras cargadas dinámicamente -->
+                    <option value="telecomunicaciones">Telecomunicaciones</option>
+                    <option value="computacion">Computacion</option>
+                    <option value="minas">Minas</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="automotriz">Automotriz</option>
+
+                    <!-- Agregar más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciclo">Ciclo:</label>
+                <select id="ciclo" name="ciclo" required>
+                    <option value="">Seleccione un ciclo</option>
+                    <option value="1">Primer Ciclo</option>
+                    <option value="2">Segundo Ciclo</option>
+                    <option value="3">Tercer Ciclo</option>
+                    <option value="4">Cuarto Ciclo</option>
+                    <option value="5">Quinto Ciclo</option>
+                    <option value="6">Sexto Ciclo</option>
+                    <option value="7">Septimo Ciclo</option>
+                    <option value="8">Octavo Ciclo</option>
+                    <option value="9">Noveno Ciclo</option>
+
+                    <!-- Opciones de ciclos cargadas dinámicamente -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="año">Año:</label>
+                <select id="año" name="año" required>
+                    <option value="">Seleccione un año</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <!-- Opciones de años cargadas dinámicamente -->
+                </select>
+            </div>
+            <button onclick="mostrarDisercion()">Ver Diserción</button>
+        </div>
+        <div class="options">
+            <h2>Diserción General por Carrera:</h2>
+            <div class="form-group">
+                <label for="carreraGeneral">Carrera:</label>
+                <select id="carreraGeneral" name="carreraGeneral" required>
+                    <option value="">Seleccione una carrera</option>
+                    <option value="telecomunicaciones">Telecomunicaciones</option>
+                    <option value="computacion">Computacion</option>
+                    <option value="minas">Minas</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="automotriz">Automotriz</option>
+                    <!-- Opciones de carreras cargadas dinámicamente -->
+                </select>
+            </div>
+            <button onclick="mostrarDisercionGeneral()">Ver Diserción General</button>
+        </div>
+        <div class="options">
+            <h2>Pronóstico de Disertaciones por Carrera:</h2>
+            <div class="form-group">
+                <label for="carreraPronostico">Carrera:</label>
+                <select id="carreraPronostico" name="carreraPronostico" required>
+                    <option value="">Seleccione una carrera</option>
+                    <option value="">Seleccione una carrera</option>
+                    <option value="telecomunicaciones">Telecomunicaciones</option>
+                    <option value="computacion">Computacion</option>
+                    <option value="minas">Minas</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="automotriz">Automotriz</option>
+                    <!-- Opciones de carreras cargadas dinámicamente -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numeroEstudiantes">Número de Estudiantes:</label>
+                <input type="number" id="numeroEstudiantes" name="numeroEstudiantes" required>
+            </div>
+            <button onclick="calcularPronostico()">Calcular Pronóstico</button>
+        </div>
+        
+        <div class="logout-container">
+            <a href="index.html" class="logout-button">Cerrar Sesión</a>
+        </div>
+        
+    </div>
+
+    <script>
+        function mostrarDisercion() {
+            // Lógica para mostrar la diserción por carrera, ciclo y año
+        }
+
+        function mostrarDisercionGeneral() {
+            // Lógica para mostrar la diserción general por carrera
+        }
+    </script>
+</body>
+</html>
