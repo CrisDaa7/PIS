@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Estadísticas Generales</title>
+    <link rel="stylesheet" href="estiloEstadisticas.css"> <!-- Archivo CSS para estilos -->
+</head>
+<body>
+    <div class="container">
+        <h1>Ver Estadísticas Generales</h1>
+        
+        <div class="select-container">
+            <label for="carrera">Seleccione una carrera:</label>
+            <select id="carrera" name="carrera">
+                <option value="">Seleccione una carrera</option>
+                <option value="computacion">Computacion</option>
+                <option value="minas">Minas</option>
+                <option value="telecomunicaciones">Telecomunicaciones</option>
+                <option value="electricidad">Electricidad</option>
+                <option value="automotriz">Automotriz</option>
+            </select>
+        </div>
+
+        <button id="ver-estadisticas-btn">Ver Estadísticas</button>
+
+        <div id="estadisticas-container" class="hidden">
+            <h2 id="titulo-carrera"></h2>
+            <!-- Aquí se mostrarán las estadísticas -->
+        </div>
+        <button id="guardar-btn" class="hidden">Guardar PDF</button>
+
+    </div>
+
+    <script>
+        document.getElementById('ver-estadisticas-btn').addEventListener('click', function() {
+            // Lógica para obtener y mostrar las estadísticas de la carrera seleccionada
+            var carreraSeleccionada = document.getElementById('carrera').value;
+            if (carreraSeleccionada !== '') {
+                document.getElementById('estadisticas-container').classList.remove('hidden');
+                document.getElementById('titulo-carrera').innerText = 'Estadísticas de ' + carreraSeleccionada;
+                document.getElementById('guardar-btn').classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('guardar-btn').addEventListener('click', function() {
+            // Lógica para generar y guardar el PDF
+            var contenido = document.getElementById('estadisticas-container').innerHTML;
+            var ventana = window.open('', '', 'height=500,width=500');
+            ventana.document.write('<html><head><title>PDF</title>');
+            ventana.document.write('</head><body>');
+            ventana.document.write(contenido);
+            ventana.document.write('</body></html>');
+            ventana.document.close();
+            ventana.print();
+            ventana.close();
+        });
+    </script>
+</body>
+</html>

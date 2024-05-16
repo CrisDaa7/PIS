@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Usuario</title>
+    <link rel="stylesheet" href="estiloBuscar.css"> <!-- Archivo CSS para estilos -->
+    <script defer src="buscarUsuario.js"></script> <!-- Archivo JS para funcionalidad -->
+</head>
+<body>
+    <div class="logo-container">
+        <img class="unl-logo" src="unl.png" alt="Logo de UNL">
+    </div>
+    <div class="container">
+        <h1>Buscar Usuario</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar usuario...">
+            <select id="searchFilter">
+                <option value="nombre">Nombre</option>
+                <option value="apellido">Apellido</option>
+                <option value="carrera">Carrera</option>
+                <option value="rol">Rol</option>
+            </select>
+            <button id="searchButton">
+                <img src="lupa.png" alt="Buscar" class="search-icon">
+            </button>
+        </div>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                    <th>Correo Electrónico</th>
+                    <th>Rol</th>
+                    <th>Carrera</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí se agregarán las filas dinámicamente con JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

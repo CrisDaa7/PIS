@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <div class="logo-container">
+        <img class="unl-logo" src="unl.png" alt="Logo de UNL">
+    </div>
+    <div class="container">
+
+        <h1>Panel de Administración</h1>
+        <div class="options">
+            <div class="option">
+                <h2>Agregar Usuario</h2>
+                <p>Agregar un nuevo Usuario</p>
+                <button onclick="window.location.href='agregarUsuario.html'">Ir</button>
+            </div>
+            <div class="option">
+                <h2>Agregar Estadistica</h2>
+                <p>Agregar estadisticas de una carrera</p>
+                <button onclick="window.location.href='agregarEstadistica.html'">Ir</button>
+            </div>
+            <div class="option">
+                <h2>Lista de Usuarios</h2>
+                <p>Ver la lista de todos los usuarios</p>
+                <button onclick="window.location.href='buscarUsuario.html'">Ir</button>
+            </div>
+      
+        </div>
+        <div class="logout-container">
+            <a href="index.html" class="logout-button">Cerrar Sesión</a>
+        </div>
+    </div>
+    
+</body>
+</html>

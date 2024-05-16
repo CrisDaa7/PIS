@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Carrera</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.3/jspdf.umd.min.js"></script>
+
+    <link rel="stylesheet" href="estiloAgregar.css"> <!-- Archivo CSS para estilos -->
+</head>
+<body>
+    <div class="logo-container">
+        <img class="unl-logo" src="unl.png" alt="Logo de UNL">
+    </div>
+    <div class="container">
+
+        <h1>Agregar Carrera</h1>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre de la Carrera:</label>
+                <select id="nombre" name="nombre" required>
+                    <option value="">Seleccione una carrera</option>
+                    <option value="Computacion">Computación</option>
+                    <option value="Telecomunicaciones">Telecomunicaciones</option>
+                    <option value="Minas">Minas</option>
+                    <option value="Automotriz">Automotriz</option>
+                    <option value="Electrica">Eléctrica</option>
+                    <!-- Puedes agregar más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ciclo">Ciclo:</label>
+                <select id="ciclo" name="ciclo" required>
+                    <option value="">Seleccione un ciclo</option>
+                    <option value="1">Primer Ciclo</option>
+                    <option value="2">Segundo Ciclo</option>
+                    <option value="3">Tercer Ciclo</option>
+                    <option value="4">Cuarto Ciclo</option>
+                    <option value="5">Quinto Ciclo</option>
+                    <option value="6">Sexto Ciclo</option>
+                    <option value="7">Séptimo Ciclo</option>
+                    <option value="8">Octavo Ciclo</option>
+                    <option value="9">Noveno Ciclo</option>
+                    <!-- Agrega más opciones según sea necesario -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="estudiantesMatriculados">Número de Estudiantes Matriculados:</label>
+                <input type="number" id="estudiantesMatriculados" name="estudiantesMatriculados" required>
+            </div>
+            <div class="form-group">
+                <label for="estudiantesRetirados">Número de Estudiantes Retirados:</label>
+                <input type="number" id="estudiantesRetirados" name="estudiantesRetirados" required>
+            </div>
+            <div class="form-group">
+                <label for="estudiantesReprobados">Número de Estudiantes Reprobados:</label>
+                <input type="number" id="estudiantesReprobados" name="estudiantesReprobados" required>
+            </div>
+            <div class="form-group">
+                <label for="estudiantesReprobados">Número de Estudiantes Aprobados:</label>
+                <input type="number" id="estudiantesReprobados" name="estudiantesReprobados" required>
+            </div>
+            <div class="form-group">
+                <label for="periodo">Periodo Académico:</label>
+                <input type="text" id="periodo" name="periodo" required>
+            </div>
+            <button type="submit">Agregar Carrera</button>
+        </form>
+    </div>
+</body>
+</html>

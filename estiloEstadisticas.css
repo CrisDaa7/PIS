@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c2c2ff; /* Azul claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor de la imagen */
+.logo-container {
+    text-align: center; /* Centramos horizontalmente */
+}
+
+/* Estilos para la imagen de UNL */
+.unl-logo {
+    max-width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto 0; /* Ajustamos el margen superior para separar la imagen del contenido */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para el contenedor del menú desplegable */
+.select-container {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas */
+label {
+    font-weight: bold;
+}
+
+/* Estilos para el menú desplegable */
+.select-container select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Estilos para el contenedor de estadísticas */
+#estadisticas-container {
+    margin-top: 20px;
+}
+
+/* Estilos para elementos ocultos */
+.hidden {
+    display: none;
+}
+
+/* Estilos para el botón de guardar */
+#guardar-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para el botón de guardar al pasar el cursor sobre él */
+#guardar-btn:hover {
+    background-color: #0056b3;
+}
